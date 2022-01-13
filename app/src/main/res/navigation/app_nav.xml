@@ -9,5 +9,114 @@
         android:id="@+id/mainFragment"
         android:name="com.vilp.rta.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_guiaFragment"
+            app:destination="@id/guiaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.vilp.rta.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_novaEntradaFragment"
+            app:destination="@id/novaEntradaFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_outrosFragment"
+            app:destination="@id/outrosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/novaEntradaFragment"
+        android:name="com.vilp.rta.NovaEntradaFragment"
+        android:label="fragment_nova_entrada"
+        tools:layout="@layout/fragment_nova_entrada" >
+        <action
+            android:id="@+id/action_novaEntradaFragment_to_confirmFragment"
+            app:destination="@id/confirmFragment" />
+        <action
+            android:id="@+id/action_novaEntradaFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmFragment"
+        android:name="com.vilp.rta.ConfirmFragment"
+        android:label="fragment_confirm"
+        tools:layout="@layout/fragment_confirm" >
+        <action
+            android:id="@+id/action_confirmFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_confirmFragment_to_novaEntradaFragment"
+            app:destination="@id/novaEntradaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/outrosFragment"
+        android:name="com.vilp.rta.OutrosFragment"
+        android:label="fragment_outros"
+        tools:layout="@layout/fragment_outros" >
+        <action
+            android:id="@+id/action_outrosFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_outrosFragment_to_registoFragment"
+            app:destination="@id/registoFragment" />
+        <action
+            android:id="@+id/action_outrosFragment_to_diagramaFragment"
+            app:destination="@id/diagramaFragment" />
+        <action
+            android:id="@+id/action_outrosFragment_to_alertaFragment"
+            app:destination="@id/alertaFragment" />
+        <action
+            android:id="@+id/action_outrosFragment_to_configFragment"
+            app:destination="@id/configFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registoFragment"
+        android:name="com.vilp.rta.RegistoFragment"
+        android:label="fragment_registo"
+        tools:layout="@layout/fragment_registo" >
+        <action
+            android:id="@+id/action_registoFragment_to_outrosFragment"
+            app:destination="@id/outrosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diagramaFragment"
+        android:name="com.vilp.rta.DiagramaFragment"
+        android:label="fragment_diagrama"
+        tools:layout="@layout/fragment_diagrama" >
+        <action
+            android:id="@+id/action_diagramaFragment_to_outrosFragment"
+            app:destination="@id/outrosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/alertaFragment"
+        android:name="com.vilp.rta.AlertaFragment"
+        android:label="fragment_alerta"
+        tools:layout="@layout/fragment_alerta" >
+        <action
+            android:id="@+id/action_alertaFragment_to_outrosFragment"
+            app:destination="@id/outrosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/configFragment"
+        android:name="com.vilp.rta.ConfigFragment"
+        android:label="fragment_config"
+        tools:layout="@layout/fragment_config" >
+        <action
+            android:id="@+id/action_configFragment_to_outrosFragment"
+            app:destination="@id/outrosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/guiaFragment"
+        android:name="com.vilp.rta.GuiaFragment"
+        android:label="fragment_guia"
+        tools:layout="@layout/fragment_guia" >
+        <action
+            android:id="@+id/action_guiaFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
 </navigation>
