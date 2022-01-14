@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_margin">12dp</dimen>
+    <dimen name="title_main">40sp</dimen>
+    <dimen name="btn_guide_margin">48dp</dimen>
+</resources>
