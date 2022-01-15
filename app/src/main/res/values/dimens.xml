@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="btn_margin">12dp</dimen>
-    <dimen name="title_main">40sp</dimen>
+    <dimen name="title_main">48sp</dimen>
+    <dimen name="title">40sp</dimen>
     <dimen name="btn_guide_margin">48dp</dimen>
+    <dimen name="extended_fab_margin">32dp</dimen>
+    <dimen name="txt_guide">24sp</dimen>
+    <dimen name="btn_text_size">32sp</dimen>
 </resources>

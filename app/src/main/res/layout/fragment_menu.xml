@@ -1,14 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MenuFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/menu_txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_title"
+        android:textAlignment="center"
+        android:padding="12dp"
+        android:textSize="@dimen/title"
+        android:layout_alignParentTop="true"
+        />
+
+    <View
+        android:id="@+id/menu_divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"
+        android:layout_below="@id/menu_txt_title"/>
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_divider"
+        android:layout_above="@id/menu_btn_new"
+        android:text="@string/menu_guide"
+        android:textSize="@dimen/txt_guide"
+        android:gravity="center"
+        android:paddingHorizontal="16dp"
+        />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/menu_btn_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_new_btn"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/btn_margin"
+        android:textSize="@dimen/btn_text_size"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        />
+
+    <Button
+        android:id="@+id/menu_btn_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_exit_btn"
+        android:layout_below="@id/menu_btn_new"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/btn_margin"
+        android:textSize="@dimen/btn_text_size"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/menu_efab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/extended_fab_margin"
+        android:text="@string/menu_other_btn"
+        android:textSize="24sp"
+        app:icon="@drawable/ic_baseline_more_horiz"
+        />
+</RelativeLayout>
