@@ -8,27 +8,9 @@
     tools:context=".MenuFragment">
 
     <TextView
-        android:id="@+id/menu_txt_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/menu_title"
-        android:textAlignment="center"
-        android:padding="12dp"
-        android:textSize="@dimen/title"
         android:layout_alignParentTop="true"
-        />
-
-    <View
-        android:id="@+id/menu_divider"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="?android:attr/listDivider"
-        android:layout_below="@id/menu_txt_title"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/menu_divider"
         android:layout_above="@id/menu_btn_new"
         android:text="@string/menu_guide"
         android:textSize="@dimen/txt_guide"

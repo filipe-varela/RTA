@@ -16,6 +16,7 @@ class MenuFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? = inflater.inflate(R.layout.fragment_menu, container, false).also {
+        (activity as MainActivity).showSupportActionBar(visibility = true, R.string.menu_title)
         it.findViewById<Button>(R.id.menu_btn_new).setOnClickListener { _ ->
             Navigation.findNavController(it).navigate(R.id.action_menuFragment_to_novaEntradaFragment)
         }
